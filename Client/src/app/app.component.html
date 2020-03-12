@@ -1,0 +1,14 @@
+<h1>HN Feed</h1>
+<h2>We Hacker News</h2>
+
+
+  <mat-nav-list>
+    <mat-list-item *ngFor="let post of sortData">
+       <a matLine href="...">{{post.story_title}}</a>
+       <a matLine href="...">{{post.author}}</a>
+       <a matLine href="...">{{post.created_at | date:'short'}}</a>
+       <button mat-icon-button (click)="delete(post.story_id)">
+          <mat-icon>delete</mat-icon>
+       </button>
+    </mat-list-item>
+  </mat-nav-list>
