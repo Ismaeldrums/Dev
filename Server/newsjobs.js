@@ -24,7 +24,7 @@ class Main {
   }
 }
 //'00 59 * * * *'  1 hour
-// */10 * * * * *   10 secons
+// */10 * * * * *   10 seconds
 cron.schedule("00 59 * * * *", () => {
   Main.getNews();
 });
